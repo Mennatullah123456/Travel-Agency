@@ -1,0 +1,36 @@
+.logos {
+
+  width: 100%;
+  max-width: 80rem;
+  margin : 100px auto !important;
+}
+.logos .logos_wrapper {
+    display: flex;
+    gap :2.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  /* display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 2.5rem;
+  grid-row-gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto; */
+}
+.logos .logos_wrapper .single_logo {
+  justify-self: center;
+  align-self: center;
+  padding: 1rem 1.625rem;
+  border-radius: 15px;
+  filter: grayscale(100%);
+  transition: filter 200ms ease, box-shadow 200ms ease-in,
+    -webkit-filter 200ms ease;
+}
+.logos .logos_wrapper .single_logo:hover {
+  box-shadow: 0 9px 20px -3px rgba(0, 0, 0, 0.1);
+  filter: none;
+}
+.logos .logos_wrapper .single_logo img {
+  height: 1.875rem;
+  object-fit: cover;
+}

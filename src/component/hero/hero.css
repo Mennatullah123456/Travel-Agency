@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Volkhov:wght@400;700&display=swap");
+
+.home_page {
+  background-image: url("/public/assets/home/bg1.png"), url("/public/assets/home/bg2.svg");
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: transparent;
+  background-position: -58% -135%, 100% -5%;
+  background-size: auto, auto;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: scroll, scroll;
+  padding: 8rem;
+}
+@media (max-width: 1330px) {
+  .home_page {
+    padding: 3rem;
+  }
+}
+
+.home_page .home_content {
+  display: grid;
+  -webkit-box-align: center;
+  align-items: center;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+.home_page .home_content .home_text {
+}
+.home_page .home_content .home_text .top_text {
+  padding-top: 4rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
+  margin: 1rem;
+}
+.home_page .home_content .home_text .top_text span {
+  font-family: Poppins, sans-serif;
+  color: #df6951;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.home_page .home_content .home_text h1 {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  transition: opacity 200ms ease;
+  font-family: Volkhov, sans-serif;
+  color: #181e4b;
+  font-size: 5.25rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  margin: 0.27em 0;
+  line-height: 1.1;
+  font-weight: 700;
+}
+.home_page .home_content .home_text h1 .enjoy_word {
+  background-image: url(/public/assets/home/enjoy_word.svg);
+  background-position: 50% 84%;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.home_page .home_content .home_text .bottom_text p {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  transition: opacity 200ms ease;
+  color: #5e6282;
+  line-height: 1.7;
+  font-family: "Poppins", sans-serif;
+}
+
+.home_page .home_content .home_buttons {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  transition: opacity 200ms ease;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 36px;
+  grid-row-gap: 16px;
+}
+.home_page .home_content .home_buttons a:first-child {
+  display: inline-block;
+  background-color: #f1a501;
+  box-shadow: 0 8px 15px 2px rgba(241, 165, 1, 0.3);
+  padding: 0.875rem 1.625rem;
+  border-radius: 10px;
+  font-family: Poppins, sans-serif;
+  font-size: 1.125rem;
+  color: white;
+  border: 0;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+.home_page .home_content .home_buttons span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.home_page .home_content .home_buttons span img {
+  filter: drop-shadow(0 15px 15px rgba(223, 105, 81, 0.5));
+  display: inline-block;
+}
+
+.home_page .home_content .home_image {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+.home_page .home_content .home_image img {
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+}
+@media (max-width: 991px) {
+  .home_page {
+    background-position: -58% -135%, 100% 159%;
+    background-size: auto, auto;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: scroll, scroll;
+  }
+  .home_page .home_content {
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: auto;
+  }
+  .home_page .home_content .home_text .top_text {
+    margin-top: 0rem;
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+  .home_page .home_content .home_text .top_text span {
+    font-size: 0.875rem;
+  }
+  .home_page .home_content .home_text .bottom_text {
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+  .home_page .home_content .home_text h1 {
+    font-size: 2.5rem;
+  }
+  .home_page .home_content .home_buttons {
+    grid-column-gap: 70px;
+  }
+}
+@media (max-width: 768px) {
+  .home_page {
+    background-image: url("/public/assets/home/bg2.svg");
+    background-position: 100% -51%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+  .home_page .home_content {
+    grid-row-gap: 40px;
+    grid-template-columns: 1fr;
+  }
+  .home_page .home_content .home_text {
+    text-align: center;
+  }
+  .home_page .home_content .home_text .top_text {
+    margin-top: 0rem;
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+  .home_page .home_content .home_text h1 {
+    font-size: 3.2rem;
+  }
+  .home_page .home_content .home_text .bottom_text {
+    margin-top: 1.95rem;
+    margin-bottom: 1.95rem;
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+  .home_page .home_content .home_text .home_buttons {
+    flex-direction: column;
+  }
+  .home_page .home_content .home_text .home_buttons a:first-child {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 479px) {
+  .home_page {
+    padding: 1rem;
+  }
+  .home_page .home_content .home_text {
+    margin-top: 50px;
+  }
+  .home_page .home_content .home_text .top_text {
+    margin-top: 0rem;
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+  .home_page .home_content .home_text h1 {
+    font-size: 2.7rem;
+  }
+  .home_page .home_content .home_text .bottom_text {
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+  .home_page .home_content .home_text .bottom_text p {
+    font-size: 1rem;
+  }
+  .home_page .home_content .home_text .home_buttons {
+    flex-direction: column;
+    justify-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+}

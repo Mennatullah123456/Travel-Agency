@@ -1,0 +1,114 @@
+
+
+.header {
+  position: absolute;
+  /* display: block; */
+  width: 93%;
+  background-color: transparent;
+  z-index: 99;
+  right: 0;
+  left: 0;
+}
+.header .header_wrapper {
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  margin-bottom: 4rem;
+  display: flex;
+  width: 100%;
+  max-width: 80rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+
+  color: #5e6282;
+}
+.header .header_wrapper .logo {
+  width: 6.25rem;
+  position: relative;
+  float: left;
+  text-decoration: none;
+  color: #333333;
+}
+.header .header_wrapper .logo img {
+  display: inline-block;
+  max-width: 100%;
+}
+.header .header_wrapper nav {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  float: right;
+}
+.header .header_wrapper nav a {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  color: #222222;
+  padding: 20px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  transition: color 200ms ease;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+}
+.header .header_wrapper nav .sign_up {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+.header .header_wrapper nav a:hover {
+  color: #5e6282;
+}
+.header .header_wrapper .menu {
+  position: relative;
+  float: right;
+  margin-right: 20px;
+  padding: 12px;
+  font-size: 18px;
+  display: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+@media (max-width: 991px) {
+  .header .header_wrapper nav {
+    position: absolute;
+    top: 50%;
+    right: -10%;
+    left: 0;
+    flex-direction: column;
+    background-color: rgba(241, 165, 1, 0.98);
+
+    display: none;
+  }
+  .header .header_wrapper nav.active {
+    display: flex;
+    transform: translateY(0px) translateX(0px);
+    transition: transform 400ms ease 0s;
+  }
+
+  .header .header_wrapper nav a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+  }
+  .header .header_wrapper nav .sign_up {
+    padding: 5px 60px;
+  }
+  .header .header_wrapper .menu {
+    line-height: 1rem;
+    text-align: center;
+    display: block;
+  }
+}

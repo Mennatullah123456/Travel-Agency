@@ -1,0 +1,18 @@
+.testmonials {
+  padding-right: 8rem;
+  padding-left: 8rem;
+}
+.testmonials .testmonials_wrapper {
+  margin-right: auto !important;
+  margin-left: auto !important;
+  width: 100%;
+  max-width: 80rem;
+  grid-template-columns: 0.75fr 1fr;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-rows: auto;
+}
+.testmonials_wrapper .testmonials_right .testmonial_card {
+}
